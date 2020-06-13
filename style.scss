@@ -12,7 +12,6 @@ $Very-Dark-Blue: hsl(229, 57%, 11%);
 //Font Weight
 //400, 700
 
-
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +21,24 @@ $Very-Dark-Blue: hsl(229, 57%, 11%);
 body {
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
-
+    background-color: $Very-Dark-Blue;
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: bottom;
+    height: 625px;
     
+    .left {
+        background-color: $Dark-Blue;
+        height: 100px;
+        width: 25%;
+        //float: left;
+    }
+
+    .right {
+        background-color: $Dark-Blue;
+        height: 100px;
+        width: 25%;
+        //float: right;
+    }
 }
