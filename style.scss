@@ -26,19 +26,25 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 50%;
     background-position: bottom;
-    height: 625px;
-    
-    .left {
-        background-color: $Dark-Blue;
-        height: 100px;
-        width: 25%;
-        //float: left;
-    }
+    height: 425px;
 
-    .right {
-        background-color: $Dark-Blue;
-        height: 100px;
-        width: 25%;
-        //float: right;
+    .container {
+        margin: 200px auto;
+        text-align: center;
+
+        .left {
+            background-color: $Dark-Blue;
+            height: 250px;
+            width: 300px;
+            display: inline-block;
+        }
+
+        .right {
+            background-color: $Dark-Blue;
+            height: 200px;
+            width: 600px;
+            margin-left: 40px;
+            display: inline-block;
+        }
     }
 }
