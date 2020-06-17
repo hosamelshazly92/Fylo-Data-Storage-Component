@@ -1,6 +1,6 @@
 //Primary Colors
 
-//Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
+//Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
 
 //Neutral Colors
 
@@ -20,7 +20,7 @@ $Very-Dark-Blue: hsl(229, 57%, 11%);
     margin-right: 15px;
     float: left;
     border-radius: 10px;
-    
+
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -54,24 +54,26 @@ body {
             border-radius: 15px;
             border-top-right-radius: 75px;
             padding: 40px;
-            
+
             .img-logo {
                 display: block;
                 height: 30px;
             }
-            
-            .icon-document, .icon-folder, .icon-upload {
+
+            .icon-document,
+            .icon-folder,
+            .icon-upload {
                 @extend %icon;
             }
-            
+
             .icon-folder {
                 background-image: url(./images/icon-folder.svg);
             }
-            
+
             .icon-document {
                 background-image: url(./images/icon-document.svg);
             }
-            
+
             .icon-upload {
                 background-image: url(./images/icon-upload.svg);
             }
@@ -79,10 +81,56 @@ body {
 
         .right {
             background-color: $Dark-Blue;
-            height: 175px;
-            width: 600px;
+            height: 150px;
+            width: 500px;
             margin-left: 40px;
             display: inline-block;
+
+            border-radius: 15px;
+            color: $Pale-Blue;
+            padding: 40px;
+
+            p {
+                float: left;
+                font-size: 1rem;
+            }
+
+            #progressbar {
+                background-color: $Very-Dark-Blue;
+                border-radius: 20px;
+                padding: 4px;
+                margin: 30px 0px 10px 0px;
+            }
+
+            #progressbar > div {
+                background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+                width: 75%;
+                height: 16px;
+                border-radius: 8px;
+                
+                div {
+                    width: 14px;
+                    height: 80%;
+                    background-color: aliceblue;
+                    float: right;
+                    border-radius: 8px;
+                    margin: 1.5px 1.5px 0px 0px;
+                    opacity: 0.9;
+                }
+            }
+
+            div {
+                p:first-of-type {
+                    font-weight: 700;
+                    font-size: 0.8rem;
+                }
+
+                p:last-of-type {
+                    float: right;
+                    font-weight: 700;
+                    font-size: 0.8rem;
+                }
+            }
         }
     }
 }
