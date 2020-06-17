@@ -58,8 +58,8 @@ body .container .left .icon-upload {
 body .container .right {
   background-color: #1d2c67;
   height: 150px;
-  width: 500px;
-  margin-left: 40px;
+  width: 450px;
+  margin-left: 50px;
   display: inline-block;
   border-radius: 15px;
   color: #dddbff;
@@ -104,7 +104,7 @@ body .container .note {
   display: inline-block;
   position: relative;
   top: -5px;
-  left: -295px;
+  left: -315px;
   padding: 20px;
   border-radius: 20px;
   border-bottom-right-radius: 0px;
@@ -129,6 +129,40 @@ body .container .note .arrow {
   position: relative;
   top: 40px;
   left: 20px;
+}
+
+@media (max-width: 1210px) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+    background-size: 100% 100%;
+    background-position: bottom;
+    height: 515px;
+  }
+  body .container {
+    margin: 100px auto;
+  }
+  body .container .left,
+body .container .right {
+    margin-left: 0;
+    display: block;
+    margin: 10px auto;
+  }
+  body .container .note {
+    border-radius: 20px;
+    height: 75px;
+    line-height: 1;
+    margin: -30px 40%;
+    position: none;
+    top: 0;
+    left: 0;
+  }
+  body .container .note .arrow {
+    border-right: none;
+    border-bottom: none;
+    position: none;
+    top: 0;
+    left: 0;
+  }
 }
 
 /*# sourceMappingURL=compiled.css.map */
