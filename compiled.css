@@ -34,16 +34,17 @@ body .container {
 }
 body .container .left {
   background-color: #1d2c67;
-  height: 175px;
-  width: 300px;
+  height: 200px;
+  width: 350px;
   display: inline-block;
   border-radius: 15px;
-  border-top-right-radius: 75px;
-  padding: 40px;
+  border-top-right-radius: 100px;
+  padding: 50px;
+  margin-left: 10%;
 }
 body .container .left .img-logo {
   display: block;
-  height: 30px;
+  height: 40px;
 }
 body .container .left .icon-folder {
   background-image: url(./images/icon-folder.svg);
@@ -86,8 +87,8 @@ body .container .right #progressbar > div div {
   background-color: aliceblue;
   float: right;
   border-radius: 8px;
-  margin: 1.5px 1.5px 0px 0px;
-  opacity: 0.9;
+  margin: 1.5px 3px 0px 0px;
+  opacity: 0.85;
 }
 body .container .right div p:first-of-type {
   font-weight: 700;
@@ -97,6 +98,37 @@ body .container .right div p:last-of-type {
   float: right;
   font-weight: 700;
   font-size: 0.8rem;
+}
+body .container .note {
+  background-color: #dddbff;
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  left: -295px;
+  padding: 20px;
+  border-radius: 20px;
+  border-bottom-right-radius: 0px;
+  width: 175px;
+  line-height: 0.5;
+  text-align: center;
+  float: right;
+}
+body .container .note span:first-of-type {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #0c122c;
+}
+body .container .note span:last-of-type {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #848794;
+}
+body .container .note .arrow {
+  border-right: 20px solid #dddbff;
+  border-bottom: 20px solid transparent;
+  position: relative;
+  top: 40px;
+  left: 20px;
 }
 
 /*# sourceMappingURL=compiled.css.map */
