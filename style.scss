@@ -34,139 +34,141 @@ $Very-Dark-Blue: hsl(229, 57%, 11%);
 body {
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
-    background-color: $Very-Dark-Blue;
-    background-image: url(images/bg-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 50%;
-    background-position: bottom;
-    height: 425px;
 
-    .container {
-        margin: 200px auto;
-        text-align: center;
+    .bg {
+        height: 665px;
+        background-color: $Very-Dark-Blue;
+        background-image: url(images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+        background-position: bottom;
+        overflow: hidden;
 
-        .left {
-            background-color: $Dark-Blue;
-            height: 200px;
-            width: 350px;
-            display: inline-block;
+        .container {
+            margin: 225px auto; 
+            text-align: center;
 
-            border-radius: 15px;
-            border-top-right-radius: 100px;
-            padding: 50px;
-            margin-left: 10%;
+            .left {
+                background-color: $Dark-Blue;
+                height: 200px;
+                width: 350px;
+                display: inline-block;
 
-            .img-logo {
-                display: block;
-                height: 40px;
+                border-radius: 15px;
+                border-top-right-radius: 100px;
+                padding: 50px;
+                margin: 0 10px;
+
+                .img-logo {
+                    display: block;
+                    height: 40px;
+                }
+
+                .icon-document,
+                .icon-folder,
+                .icon-upload {
+                    @extend %icon;
+                }
+
+                .icon-folder {
+                    background-image: url(./images/icon-folder.svg);
+                }
+
+                .icon-document {
+                    background-image: url(./images/icon-document.svg);
+                }
+
+                .icon-upload {
+                    background-image: url(./images/icon-upload.svg);
+                }
             }
 
-            .icon-document,
-            .icon-folder,
-            .icon-upload {
-                @extend %icon;
-            }
+            .right {
+                background-color: $Dark-Blue;
+                height: 150px;
+                width: 450px;
+                display: inline-block;
 
-            .icon-folder {
-                background-image: url(./images/icon-folder.svg);
-            }
+                border-radius: 15px;
+                color: $Pale-Blue;
+                padding: 40px;
+                margin: 0 10px;
 
-            .icon-document {
-                background-image: url(./images/icon-document.svg);
-            }
+                p {
+                    float: left;
+                    font-size: 1rem;
+                }
 
-            .icon-upload {
-                background-image: url(./images/icon-upload.svg);
-            }
-        }
+                #progressbar {
+                    background-color: $Very-Dark-Blue;
+                    border-radius: 20px;
+                    padding: 4px;
+                    margin: 30px 0px 10px 0px;
+                }
 
-        .right {
-            background-color: $Dark-Blue;
-            height: 150px;
-            width: 450px;
-            margin-left: 50px;
-            display: inline-block;
+                #progressbar > div {
+                    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+                    width: 75%;
+                    height: 16px;
+                    border-radius: 8px;
 
-            border-radius: 15px;
-            color: $Pale-Blue;
-            padding: 40px;
-
-            p {
-                float: left;
-                font-size: 1rem;
-            }
-
-            #progressbar {
-                background-color: $Very-Dark-Blue;
-                border-radius: 20px;
-                padding: 4px;
-                margin: 30px 0px 10px 0px;
-            }
-
-            #progressbar > div {
-                background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-                width: 75%;
-                height: 16px;
-                border-radius: 8px;
+                    div {
+                        width: 14px;
+                        height: 80%;
+                        background-color: aliceblue;
+                        float: right;
+                        border-radius: 8px;
+                        margin: 1.5px 3px 0px 0px;
+                        opacity: 0.85;
+                    }
+                }
 
                 div {
-                    width: 14px;
-                    height: 80%;
-                    background-color: aliceblue;
-                    float: right;
-                    border-radius: 8px;
-                    margin: 1.5px 3px 0px 0px;
-                    opacity: 0.85;
+                    p:first-of-type {
+                        font-weight: 700;
+                        font-size: 0.8rem;
+                    }
+
+                    p:last-of-type {
+                        float: right;
+                        font-weight: 700;
+                        font-size: 0.8rem;
+                    }
                 }
             }
 
-            div {
-                p:first-of-type {
-                    font-weight: 700;
-                    font-size: 0.8rem;
-                }
-
-                p:last-of-type {
-                    float: right;
-                    font-weight: 700;
-                    font-size: 0.8rem;
-                }
-            }
-        }
-
-        .note {
-            background-color: $Pale-Blue;
-            display: inline-block;
-            position: relative;
-            top: -5px;
-            left: -315px;
-            padding: 20px;
-            border-radius: 20px;
-            border-bottom-right-radius: 0px;
-            width: 175px;
-            line-height: 0.5;
-            text-align: center;
-            float: right;
-
-            span:first-of-type {
-                font-weight: 700;
-                font-size: 2rem;
-                color: $Very-Dark-Blue;
-            }
-
-            span:last-of-type {
-                font-weight: 700;
-                font-size: 0.8rem;
-                color: $Grayish-Blue;
-            }
-
-            .arrow {
-                border-right: 20px solid $Pale-Blue;
-                border-bottom: 20px solid transparent;
-
+            .note {
+                background-color: $Pale-Blue;
+                display: inline-block;
                 position: relative;
-                top: 40px;
-                left: 20px;
+                top: -175px;
+                left: 285px;
+                padding: 20px;
+                border-radius: 20px;
+                border-bottom-right-radius: 0px;
+                width: 175px;
+                text-align: center;
+
+                span:first-of-type {
+                    font-weight: 700;
+                    font-size: 2rem;
+                    color: $Very-Dark-Blue;
+                }
+
+                span:last-of-type {
+                    font-weight: 700;
+                    font-size: 0.8rem;
+                    color: $Grayish-Blue;
+                }
+
+                .arrow {
+                    border-right: 20px solid $Pale-Blue;
+                    border-bottom: 20px solid transparent;
+
+                    position: relative;
+                    top: 22px;
+                    left: 20px;
+                }
             }
         }
     }

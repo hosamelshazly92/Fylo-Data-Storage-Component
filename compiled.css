@@ -1,6 +1,6 @@
-body .container .left .icon-document,
-body .container .left .icon-folder,
-body .container .left .icon-upload {
+body .bg .container .left .icon-document,
+body .bg .container .left .icon-folder,
+body .bg .container .left .icon-upload {
   background-color: #0c122c;
   height: 40px;
   width: 45px;
@@ -21,18 +21,21 @@ body .container .left .icon-upload {
 body {
   font-size: 14px;
   font-family: "Raleway", sans-serif;
+}
+body .bg {
+  height: 665px;
   background-color: #0c122c;
   background-image: url(images/bg-desktop.svg);
   background-repeat: no-repeat;
   background-size: 100% 50%;
   background-position: bottom;
-  height: 425px;
+  overflow: hidden;
 }
-body .container {
-  margin: 200px auto;
+body .bg .container {
+  margin: 225px auto;
   text-align: center;
 }
-body .container .left {
+body .bg .container .left {
   background-color: #1d2c67;
   height: 200px;
   width: 350px;
@@ -40,48 +43,48 @@ body .container .left {
   border-radius: 15px;
   border-top-right-radius: 100px;
   padding: 50px;
-  margin-left: 10%;
+  margin: 0 10px;
 }
-body .container .left .img-logo {
+body .bg .container .left .img-logo {
   display: block;
   height: 40px;
 }
-body .container .left .icon-folder {
+body .bg .container .left .icon-folder {
   background-image: url(./images/icon-folder.svg);
 }
-body .container .left .icon-document {
+body .bg .container .left .icon-document {
   background-image: url(./images/icon-document.svg);
 }
-body .container .left .icon-upload {
+body .bg .container .left .icon-upload {
   background-image: url(./images/icon-upload.svg);
 }
-body .container .right {
+body .bg .container .right {
   background-color: #1d2c67;
   height: 150px;
   width: 450px;
-  margin-left: 50px;
   display: inline-block;
   border-radius: 15px;
   color: #dddbff;
   padding: 40px;
+  margin: 0 10px;
 }
-body .container .right p {
+body .bg .container .right p {
   float: left;
   font-size: 1rem;
 }
-body .container .right #progressbar {
+body .bg .container .right #progressbar {
   background-color: #0c122c;
   border-radius: 20px;
   padding: 4px;
   margin: 30px 0px 10px 0px;
 }
-body .container .right #progressbar > div {
+body .bg .container .right #progressbar > div {
   background-image: linear-gradient(to right, #ffa399, #ff4d97);
   width: 75%;
   height: 16px;
   border-radius: 8px;
 }
-body .container .right #progressbar > div div {
+body .bg .container .right #progressbar > div div {
   width: 14px;
   height: 80%;
   background-color: aliceblue;
@@ -90,44 +93,42 @@ body .container .right #progressbar > div div {
   margin: 1.5px 3px 0px 0px;
   opacity: 0.85;
 }
-body .container .right div p:first-of-type {
+body .bg .container .right div p:first-of-type {
   font-weight: 700;
   font-size: 0.8rem;
 }
-body .container .right div p:last-of-type {
+body .bg .container .right div p:last-of-type {
   float: right;
   font-weight: 700;
   font-size: 0.8rem;
 }
-body .container .note {
+body .bg .container .note {
   background-color: #dddbff;
   display: inline-block;
   position: relative;
-  top: -5px;
-  left: -315px;
+  top: -175px;
+  left: 285px;
   padding: 20px;
   border-radius: 20px;
   border-bottom-right-radius: 0px;
   width: 175px;
-  line-height: 0.5;
   text-align: center;
-  float: right;
 }
-body .container .note span:first-of-type {
+body .bg .container .note span:first-of-type {
   font-weight: 700;
   font-size: 2rem;
   color: #0c122c;
 }
-body .container .note span:last-of-type {
+body .bg .container .note span:last-of-type {
   font-weight: 700;
   font-size: 0.8rem;
   color: #848794;
 }
-body .container .note .arrow {
+body .bg .container .note .arrow {
   border-right: 20px solid #dddbff;
   border-bottom: 20px solid transparent;
   position: relative;
-  top: 40px;
+  top: 22px;
   left: 20px;
 }
 
