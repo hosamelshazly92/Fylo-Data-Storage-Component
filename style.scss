@@ -45,7 +45,7 @@ body {
         overflow: hidden;
 
         .container {
-            margin: 225px auto; 
+            margin: 225px auto;
             text-align: center;
 
             .left {
@@ -176,41 +176,35 @@ body {
 
 @media (max-width: 1210px) {
     body {
-        background-image: url(images/bg-mobile.svg);
-        background-size: 100% 100%;
-        background-position: bottom;
-        height: 515px;
+        .bg {
+            height: 655px;
+            background-image: url(images/bg-mobile.svg);
+            background-size: 100% 100%;
+            background-position: bottom;
 
-        .container {
-            margin: 100px auto;
+            .container {
+                margin: 110px auto;
 
-            .left,
-            .right {
-                margin-left: 0;
-                display: block;
-                margin: 10px auto;
-            }
+                .left,
+                .right {
+                    display: block;
+                    margin: 10px auto;
+                }
 
-            .note {
-                border-radius: 20px;
-                height: 75px;
-                line-height: 1;
-                margin: -30px 40%;
-
-                position: none;
-                top: 0;
-                left: 0;
-
-                .arrow {
-                    border-right: none;
-                    border-bottom: none;
+                .note {
+                    border-radius: 20px;
+                    height: 75px;
+                    margin: -30px auto;
 
                     position: none;
                     top: 0;
                     left: 0;
+
+                    .arrow {
+                        visibility: hidden;
+                    }
                 }
             }
-
         }
     }
 }

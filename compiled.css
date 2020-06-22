@@ -133,36 +133,30 @@ body .bg .container .note .arrow {
 }
 
 @media (max-width: 1210px) {
-  body {
+  body .bg {
+    height: 655px;
     background-image: url(images/bg-mobile.svg);
     background-size: 100% 100%;
     background-position: bottom;
-    height: 515px;
   }
-  body .container {
-    margin: 100px auto;
+  body .bg .container {
+    margin: 110px auto;
   }
-  body .container .left,
-body .container .right {
-    margin-left: 0;
+  body .bg .container .left,
+body .bg .container .right {
     display: block;
     margin: 10px auto;
   }
-  body .container .note {
+  body .bg .container .note {
     border-radius: 20px;
     height: 75px;
-    line-height: 1;
-    margin: -30px 40%;
+    margin: -30px auto;
     position: none;
     top: 0;
     left: 0;
   }
-  body .container .note .arrow {
-    border-right: none;
-    border-bottom: none;
-    position: none;
-    top: 0;
-    left: 0;
+  body .bg .container .note .arrow {
+    visibility: hidden;
   }
 }
 
